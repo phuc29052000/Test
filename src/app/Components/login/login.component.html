@@ -1,0 +1,32 @@
+<div class="backgroundheader">
+    <div class="loginform">
+        <div class="title">
+            <img class="title1" src="https://danviet.mediacdn.vn/upload/2-2016/images/2016-05-12/1463023411-3.jpg" alt="">
+        </div>
+        <form action="" (ngSubmit)="onSubmit()" #myForm="ngForm" >
+        <div class="loginform_content">
+            <div class="username">
+                <input  class="username1"  type="text" name="" id=""  required [(ngModel)]="name" name="name" >
+                <img class="user1" src="https://image.shutterstock.com/image-vector/thin-line-user-icon-on-260nw-519039097.jpg" alt="">
+                <span class="thongbao1" *ngIf="name ==='' ">Bạn chưa nhập tài khoản</span>
+            </div>
+
+            <div class="password">
+                <input class="password1"  type="password" name="" id="" required [(ngModel)]="password" name="password" >
+                <img class="pass1" src="https://icons.veryicon.com/png/o/miscellaneous/cloud-platform/password-58.png" alt="">
+                <img class="danger" src="https://png.pngtree.com/png-vector/20190411/ourlarge/pngtree-vector-eye-icon-png-image_925944.jpg" alt="">
+                <span class="thongbao2" *ngIf="password ==='' ">Bạn chưa nhập mật khẩu</span>
+            </div>
+
+            <div class="login">
+                <button type="submit"  class="login1"> Đăng nhập</button>
+            </div>
+            <a class="remember" >Quên mật khẩu?</a> 
+            <div class="register">
+                <a class="noaccount" href="">Chưa có tài khoản?</a>
+                <a class="register1" href="">Đăng ký</a>
+            </div>
+        </div>
+     </form>
+    </div>
+</div>
